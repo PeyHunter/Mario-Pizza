@@ -12,8 +12,8 @@ public class Main {
         Menukort menukortInstans = new Menukort(); // instans
         menukortInstans.createMenuKort();
         menukortInstans.writePizzaMenuToFile();
+        System.out.println("her");
+        System.out.println(menukortInstans.getRandomPizza());
     }
-
-
-
+    
 }

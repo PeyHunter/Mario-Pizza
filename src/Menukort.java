@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Menukort {
 
@@ -73,6 +74,20 @@ public class Menukort {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public ArrayList<Pizza> getPizzaArrayList() {
+        return pizzaArrayList;
+    }
+
+    private Pizza randomPizza() {
+        Random random = new Random();
+        int randomIndex = random.nextInt(pizzaArrayList.size());
+        return pizzaArrayList.get(randomIndex);
+    }
+
+    public Pizza getRandomPizza() {
+        return randomPizza();
     }
 }
 
