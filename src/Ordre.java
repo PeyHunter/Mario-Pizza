@@ -7,6 +7,14 @@ public class Ordre {
     private int bestillingsDato;
     private Pizza pizzaObject;
 
+    public Ordre(int oNummer, int bTid, int bDato, Pizza pObject)
+    {
+        ordreNr = oNummer;
+        bestillingsTid = bTid;
+        bestillingsDato = bDato;
+        pizzaObject = pObject;
+    }
+
     public int getOrdreNr(){
         return ordreNr;
     }
@@ -21,4 +29,6 @@ public class Ordre {
     public Pizza getPizzaObject() {
         return pizzaObject;
     }
+
+
 }
