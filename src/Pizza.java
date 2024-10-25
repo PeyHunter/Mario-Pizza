@@ -7,10 +7,10 @@ public class Pizza {
     private int pizzaNumber;
 
 
-   public Pizza(String pName, int pPrice, int pNr) {
+   public Pizza(String pName, int pPrice, int pNumber) {
     pizzaName = pName;
     pizzaPrice = pPrice;
-    pizzaNumber = pNr;
+    pizzaNumber = pNumber;
    }
 
    public String getPizzaName() {
@@ -21,7 +21,7 @@ public class Pizza {
         return pizzaPrice;
    }
 
-   public int getPizzaNr() {
+   public int getPizzaNumber() {
         return pizzaNumber;
    }
     @Override
