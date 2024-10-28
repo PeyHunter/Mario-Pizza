@@ -17,7 +17,7 @@ public class Menukort {
 
     public void createMenuKort() {
 
-        pizzaArrayList.add(new Pizza("Margherita", 60, 15));
+        pizzaArrayList.add(new Pizza("Margherita", 60, 1));
         pizzaArrayList.add(new Pizza("Pepperoni", 70, 32));
         pizzaArrayList.add(new Pizza("Hawaiian", 75, 22));
         pizzaArrayList.add(new Pizza("BBQ Chicken", 85, 44));

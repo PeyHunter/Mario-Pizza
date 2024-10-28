@@ -1,41 +1,48 @@
 import java.util.Random;
 import java.util.ArrayList;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Ordre {
 
     public Ordre() {}
 
-    private int ordreNr = 0;
-    private int bestillingsTid;
-    private int bestillingsDato;
+
+    private int ordreNr;
+    private LocalDateTime bestillingsTid;
+    private LocalDate bestillingsDato;
     private Pizza pizzaObject;
     private int antal;
+
+
     private Random random = new Random();
+
+
 
   //  private Menukort menukort = new Menukort();
 
-  //  private ArrayList<Pizza> pizzaArrayList = menukort.getPizzaArrayList();
-
-    private static String [] fornavn = {"Peyton","Sumaya", "Line", "Isabella", "Nauer", "Ole", "Henrik","Adam", "Ib", "Bo", };
-    private static String [] efternavn = {"Jones","Albrektsen", "Steffensen", "Hendel", "Andersen", "Badreldin","Vestergaard", "Hunter", "Green", "Simonsen"};
+  // private ArrayList<Menukort> pizzaArrayList = Menukort.getPizzaArrayList();
 
 
-    public Ordre(int oNummer, int bTid, int bDato, Pizza pObject)
+
+
+    public Ordre(int oNummer, LocalDateTime bTid, LocalDate bDato, Pizza pObject)
     {
         ordreNr = oNummer;
         bestillingsTid = bTid;
         bestillingsDato = bDato;
         pizzaObject = pObject;
+
     }
 
     public int getOrdreNr(){
         return ordreNr;
     }
 
-    public int getBestillingsbestillingsTid() {
-        return bestillingsDato;
+    public LocalDateTime getBestillingsTid() {
+        return bestillingsTid;
     }
-    public int bestillingsDato(){
+    public LocalDate bestillingsDato(){
         return bestillingsDato;
     }
 
@@ -50,3 +57,9 @@ public class Ordre {
 
 
 }
+
+
+
+
+//private static String [] fornavn = {"Peyton","Sumaya", "Line", "Isabella", "Nauer", "Ole", "Henrik","Adam", "Ib", "Bo", };
+//private static String [] efternavn = {"Jones","Albrektsen", "Steffensen", "Hendel", "Andersen", "Badreldin","Vestergaard", "Hunter", "Green", "Simonsen"};
