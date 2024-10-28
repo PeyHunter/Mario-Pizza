@@ -27,16 +27,26 @@ public class Main {
         Bestillingsliste bestillingsliste = new Bestillingsliste(); //instans
 
         while (true) {
-
-            System.out.println("Choose a pizza (or type 'exit' to finish)");
+            System.out.println("Choose a pizza (or type 'exit' to finish, or 'remove' to remove an order)");
 
             String input = scanner.nextLine();
 
             if (input.equalsIgnoreCase("exit")) {
                 break; // Exit the loop if user types 'exit'
+            } else if (input.equalsIgnoreCase("remove")) {
+                System.out.println("Enter the order number to remove:");
+                int ordreToRemove;
+                try {
+                    ordreToRemove = Integer.parseInt(scanner.nextLine());
+                    bestillingsliste.removeOrdreByNumber(ordreToRemove);
+                    System.out.println("Order number " + ordreToRemove + " has been removed.");
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid input! Please enter a valid order number.");
+                }
+                continue; // Go to the next iteration of the loop
             }
 
-
+            // Handle pizza selection
             try {
                 int pizzaIndex = Integer.parseInt(input) - 1; // Parse the input as an integer
 
@@ -53,15 +63,9 @@ public class Main {
 
                 // Print the order details after adding the new one
                 System.out.println("Order added: " + ordre);
-
-
-
             } catch (NumberFormatException e) {
                 System.out.println("Invalid input! Please enter a valid pizza number or 'exit' to finish.");
             }
-
-
-
 
 
 

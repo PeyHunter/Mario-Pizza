@@ -34,6 +34,11 @@ public class Bestillingsliste {
         }
 
 
+    public void removeOrdreByNumber(int ordreNumber) {
+        ordreList.removeIf(o -> o.getOrdreNr() == ordreNumber);
+        writeBestillingsliste(); // Update the file after removal
+    }
+
 
 
    public void writeBestillingsliste()
@@ -49,9 +54,9 @@ public class Bestillingsliste {
                 Pizza pizza = o.getPizzaObject(); // Get
 
                 writer.append(String.format("ORDRE:\n" +
-                                " - ordreNumber: %d\n" +
-                                " - bestillingsTid: %s\n" +
-                                " - bestillingsDato: %s\n" +
+                                " - ordre Number: %d\n" +
+                                " - bestillings Tid: %s\n" +
+                                " - bestillings Dato: %s\n" +
                                 " - Pizza: %s, Price: %d, Nr: %d\n",
                         o.getOrdreNr(),
                         o.getBestillingsTid().format(timeFormatter),
