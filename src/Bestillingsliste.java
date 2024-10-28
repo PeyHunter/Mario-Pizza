@@ -2,41 +2,65 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.time.format.DateTimeFormatter;
 
 public class Bestillingsliste {
 
     public Bestillingsliste()
     {}
 
-   private ArrayList<Menukort> ordreList = new ArrayList<>();
+
+    private ArrayList<Ordre> ordreList = new ArrayList<>();
+    private int currentOrderNr = 1;
 
 
 
-
-    //public ArrayList<Pizza> pizzaArrayList = new ArrayList<>();
-
-    /*public void addOrdreToList(Ordre ordre)
-    {
+    public void addOrdreToList(Ordre ordre) {
         ordreList.add(ordre);
-    }*/
+        currentOrderNr++;
+        writeBestillingsliste();
+    }
+
+        public void printBestillingsListe() {
+            for (int i = 0; i < ordreList.size(); i++)
+            {
+                Ordre ordre = ordreList.get(i);
+                System.out.println(ordre);
+            }
+        }
+
+        public int getCurrentOrderNr() {
+        return currentOrderNr;
+        }
 
 
-   /* public void writeBestillingsliste()
+
+
+   public void writeBestillingsliste()
     {
         File bestillingsListe = new File("/Users/peytonhunter/Library/CloudStorage/OneDrive-Personal/Documents/Datamatiker/1 Semester/Programmering/InteliJ/Mario Pizza/src/bestillingsListe.txt" );
-        try (FileWriter writer = new FileWriter(bestillingsListe, true)) {
+
+        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH.mm");
+        DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd-MM-yy");
+
+        try (FileWriter writer = new FileWriter(bestillingsListe, false)) {
             for (int i = 0; i < ordreList.size(); i++) {
                 Ordre o = ordreList.get(i);
+                Pizza pizza = o.getPizzaObject(); // Get
 
-                Ordre ordrePizza = o.getPizzaObject();
-                int ordreNummer = o.getOrdreNr();
-                int bestillingsTid = o.getBestillingsTid();
-                int ordrerDato = o.bestillingsDato();
+                writer.append(String.format("ORDRE:\n" +
+                                " - ordreNumber: %d\n" +
+                                " - bestillingsTid: %s\n" +
+                                " - bestillingsDato: %s\n" +
+                                " - Pizza: %s, Price: %d, Nr: %d\n",
+                        o.getOrdreNr(),
+                        o.getBestillingsTid().format(timeFormatter),
+                        o.bestillingsDato().format(dateFormatter),
+                        pizza.getPizzaName(),
+                        pizza.getPizzaPrice(),
+                        pizza.getPizzaNumber()));
+                writer.append(System.lineSeparator());
 
-                writer.append(ordrePizza + ", ");
-                writer.append(Integer.toString(ordreNummer) + ", ");
-                writer.append(Integer.toString(ordrerDato) + ", ");
-                writer.append(Integer.toString(bestillingsTid) + '\n');
 
                 System.out.println(o.getPizzaObject() + ", " + o.getBestillingsTid() + ", " + o.getOrdreNr());
             }
@@ -44,7 +68,15 @@ public class Bestillingsliste {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }*/
-
+    }
 
 }
+
+
+
+
+//        public void removePaidOrders ()
+//        {
+//            ordreList.removeIf(Ordre::isPaid);
+//        }
+

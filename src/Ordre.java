@@ -13,26 +13,29 @@ public class Ordre {
     private LocalDate bestillingsDato;
     private Pizza pizzaObject;
     private int antal;
-
+    private boolean paid;
 
     private Random random = new Random();
 
 
 
-  //  private Menukort menukort = new Menukort();
-
-  // private ArrayList<Menukort> pizzaArrayList = Menukort.getPizzaArrayList();
-
-
-
-
     public Ordre(int oNummer, LocalDateTime bTid, LocalDate bDato, Pizza pObject)
     {
-        ordreNr = oNummer;
-        bestillingsTid = bTid;
-        bestillingsDato = bDato;
-        pizzaObject = pObject;
+        this.ordreNr = oNummer;
+        this.bestillingsTid = bTid;
+        this.bestillingsDato = bDato;
+        this.pizzaObject = pObject;
+        this.paid = false;
     }
+
+    public void markAsPaid() {
+        this.paid = true;
+    }
+
+    public boolean isPaid() {
+        return this.paid;
+    }
+
 
     public int getOrdreNr(){
         return ordreNr;
@@ -53,14 +56,12 @@ public class Ordre {
 
     @Override
     public String toString() {
-        return "Ordre{" +
-                "ordreNr=" + ordreNr +
-                ", bestillingsTid=" + bestillingsTid +
-                ", bestillingsDato=" + bestillingsDato +
-                ", pizzaObject=" + pizzaObject +
-                ", antal=" + antal +
-                ", random=" + random +
-                '}';
+        return "ORDRE:\n" +
+                " - Ordre Nr: " + ordreNr + "\n" +
+                " - Bestillings Tidspunkt: " + bestillingsTid + "\n" +
+                " - Bestillings Dato: " + bestillingsDato + "\n" +
+                " - Pizza: " + pizzaObject + "\n";
+
     }
 }
 
