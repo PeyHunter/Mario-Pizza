@@ -11,6 +11,8 @@ public class Bestillingsliste {
    private ArrayList<Menukort> ordreList = new ArrayList<>();
 
 
+
+
     //public ArrayList<Pizza> pizzaArrayList = new ArrayList<>();
 
     /*public void addOrdreToList(Ordre ordre)

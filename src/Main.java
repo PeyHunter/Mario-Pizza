@@ -21,9 +21,11 @@ public class Main {
         menukortInstans.createMenuKort();
         menukortInstans.writePizzaMenuToFile();
         System.out.println("her");
-        System.out.println(menukortInstans.getRandomPizza());
 
-        menukortInstans.createMenuKort();
+        //System.out.println(menukortInstans.getRandomPizza());
+
+
+       // menukortInstans.createMenuKort();
        // System.out.println(menukortInstans.getPizzaArrayList());
 
         for(int i = 0; i < menukortInstans.getPizzaArrayList().size(); i++)
@@ -34,6 +36,18 @@ public class Main {
         System.out.println("type the number you want");
         int number = scanner.nextInt();
         scanner.nextLine();
+
+        Pizza selectedPizza = menukortInstans.getPizzaArrayList().get(3);
+        Pizza chosenPizza = new Pizza(selectedPizza.getPizzaName(), selectedPizza.getPizzaPrice(), selectedPizza.getPizzaNumber());
+
+
+
+        Ordre order = new Ordre(1, LocalDateTime.now(), LocalDate.now(), chosenPizza);
+
+
+         //    for(int i = 0; i < menukortInstans.getPizzaArrayList().size(); i++)
+
+                 System.out.println(order);
 
 
 

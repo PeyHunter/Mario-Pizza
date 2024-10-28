@@ -32,7 +32,6 @@ public class Ordre {
         bestillingsTid = bTid;
         bestillingsDato = bDato;
         pizzaObject = pObject;
-
     }
 
     public int getOrdreNr(){
@@ -52,10 +51,17 @@ public class Ordre {
 
 
 
-
-
-
-
+    @Override
+    public String toString() {
+        return "Ordre{" +
+                "ordreNr=" + ordreNr +
+                ", bestillingsTid=" + bestillingsTid +
+                ", bestillingsDato=" + bestillingsDato +
+                ", pizzaObject=" + pizzaObject +
+                ", antal=" + antal +
+                ", random=" + random +
+                '}';
+    }
 }
 
 
