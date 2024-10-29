@@ -1,30 +1,6 @@
 ORDRE:
  - Ordre Number: 1
- - Bestillings Tid: 11.51
- - Bestillings Dato: 29-10-24
- - Pizza: Pepperoni, Price: 70, Nr: 2
-
-ORDRE:
- - Ordre Number: 2
- - Bestillings Tid: 11.51
+ - Bestillings Tid: 13.24
  - Bestillings Dato: 29-10-24
  - Pizza: Margherita, Price: 60, Nr: 1
-
-ORDRE:
- - Ordre Number: 3
- - Bestillings Tid: 11.51
- - Bestillings Dato: 29-10-24
- - Pizza: Pepperoni, Price: 70, Nr: 2
-
-ORDRE:
- - Ordre Number: 4
- - Bestillings Tid: 12.14
- - Bestillings Dato: 29-10-24
- - Pizza: Pepperoni, Price: 70, Nr: 2
-
-ORDRE:
- - Ordre Number: 5
- - Bestillings Tid: 12.14
- - Bestillings Dato: 29-10-24
- - Pizza: Hawaiian, Price: 75, Nr: 3
 

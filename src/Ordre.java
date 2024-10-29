@@ -2,6 +2,7 @@ import java.util.Random;
 import java.util.ArrayList;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Ordre {
 
@@ -12,7 +13,7 @@ public class Ordre {
     private LocalDateTime bestillingsTid;
     private LocalDate bestillingsDato;
     private Pizza pizzaObject;
-    private int antal = 123445;
+    private int antal;
     private boolean paid;
 
     private Random random = new Random();
@@ -28,7 +29,7 @@ public class Ordre {
         this.paid = false;
     }
 
-    public void markAsPaid() {
+   /* public void markAsPaid() {
         this.paid = true;
     }
 
@@ -36,11 +37,10 @@ public class Ordre {
         return this.paid;
     }
 
-
     public int getAntal()
     {
         return this.antal;
-    }
+    }*/
 
     public int getOrdreNr(){
         return ordreNr;
@@ -61,10 +61,14 @@ public class Ordre {
 
     @Override
     public String toString() {
+
+        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH.mm");
+        DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd-MM-yy");
+
         return "ORDRE:\n" +
                 " - Ordre Nr: " + ordreNr + "\n" +
-                " - Bestillings Tidspunkt: " + bestillingsTid + "\n" +
-                " - Bestillings Dato: " + bestillingsDato + "\n" +
+                " - Bestillings Tidspunkt: " + bestillingsTid.format(timeFormatter) + "\n" +
+                " - Bestillings Dato: " + bestillingsDato.format(dateFormatter) + "\n" +
                 " - Pizza: " + pizzaObject + "\n";
 
     }

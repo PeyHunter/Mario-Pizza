@@ -10,21 +10,22 @@
         {}
 
 
-        private ArrayList<Ordre> ordreList = new ArrayList<>();
+        private ArrayList<Ordre> bestillingsListe = new ArrayList<>();
+
         private int currentOrderNr = 1;
 
 
 
         public void addOrdreToList(Ordre ordre) {
-            ordreList.add(ordre);
+            bestillingsListe.add(ordre);
             currentOrderNr++;
             writeBestillingsliste();
         }
 
             public void printBestillingsListe() {
-                for (int i = 0; i < ordreList.size(); i++)
+                for (int i = 0; i < bestillingsListe.size(); i++)
                 {
-                    Ordre ordre = ordreList.get(i);
+                    Ordre ordre = bestillingsListe.get(i);
                     System.out.println(ordre);
                 }
             }
@@ -35,10 +36,10 @@
 
 
         public void removeOrdreByNumber(int ordreNumber) {
-            for (int i = 0; i < ordreList.size(); i++) {
-                Ordre o = ordreList.get(i);
+            for (int i = 0; i < bestillingsListe.size(); i++) {
+                Ordre o = bestillingsListe.get(i);
                 if (o.getOrdreNr() == ordreNumber) {
-                    ordreList.remove(i);
+                    bestillingsListe.remove(i);
                     writeBestillingsliste(); // Updater fil
                     break; // Exit loop
                 }
@@ -55,8 +56,8 @@
             DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd-MM-yy");
 
             try (FileWriter writer = new FileWriter(bestillingsListe, false)) {
-                for (int i = 0; i < ordreList.size(); i++) {
-                    Ordre o = ordreList.get(i);
+                for (int i = 0; i < this.bestillingsListe.size(); i++) {
+                    Ordre o = this.bestillingsListe.get(i);
                     Pizza pizza = o.getPizzaObject(); // Get
 
                     //UDSKRIVER TEKSTEN PÅ EN BESTEMT MÅDE. LINJERNE PASSER SAMMEN.
@@ -77,7 +78,7 @@
                     writer.append(System.lineSeparator());
 
 
-                    System.out.println(o.getPizzaObject() + ", " + o.getBestillingsTid() + ", " + o.getOrdreNr());
+                    //System.out.println(o.getPizzaObject() + ", " + o.getBestillingsTid() + ", " + o.getOrdreNr());
                 }
 
             } catch (IOException e) {
