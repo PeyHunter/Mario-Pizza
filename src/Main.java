@@ -37,6 +37,7 @@ public class Main {
             if (input.equalsIgnoreCase("exit")) {
                 break; // Exit the loop if user types 'exit'
 
+
             } else if (input.equalsIgnoreCase("remove")) {
                 System.out.println("Enter the order number to remove:");
                 int ordreToRemove;
@@ -56,7 +57,7 @@ public class Main {
             // VÆLG PIZZA UD FRA PIZZA NR:
 
             try {
-                int pizzaNr = Integer.parseInt(input) - 1; // Parse the input as an integer
+                int pizzaNr = Integer.parseInt(input) - 1; // Parse the input til en integer. - 1 så den passer til arrayList
 
                 // Er pizza Nr valid?
 
@@ -76,6 +77,8 @@ public class Main {
             } catch (NumberFormatException e) {
                 System.out.println("Invalid input! Please enter a valid pizza number or 'exit' to finish.");
             }
+
+            bestillingsliste.addRemovedOrdersToFile();
 
 
         }

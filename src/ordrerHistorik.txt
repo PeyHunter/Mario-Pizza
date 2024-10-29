@@ -1,0 +1,20 @@
+FINISHED / PAID FOR ORDERS  
+
+ORDRE:
+ - Ordre Number: 3
+ - Bestillings Tid: 15.30
+ - Bestillings Dato: 29-10-24
+ - Pizza: Spicy Sausage, Price: 80, Nr: 13
+
+ORDRE:
+ - Ordre Number: 2
+ - Bestillings Tid: 15.30
+ - Bestillings Dato: 29-10-24
+ - Pizza: Seafood Special, Price: 110, Nr: 11
+
+ORDRE:
+ - Ordre Number: 1
+ - Bestillings Tid: 15.30
+ - Bestillings Dato: 29-10-24
+ - Pizza: Tuna and Sweetcorn, Price: 95, Nr: 12
+
