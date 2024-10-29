@@ -54,9 +54,9 @@ public class Bestillingsliste {
                 Pizza pizza = o.getPizzaObject(); // Get
 
                 writer.append(String.format("ORDRE:\n" +
-                                " - ordre Number: %d\n" +
-                                " - bestillings Tid: %s\n" +
-                                " - bestillings Dato: %s\n" +
+                                " - Ordre Number: %d\n" +
+                                " - Bestillings Tid: %s\n" +
+                                " - Bestillings Dato: %s\n" +
                                 " - Pizza: %s, Price: %d, Nr: %d\n",
                         o.getOrdreNr(),
                         o.getBestillingsTid().format(timeFormatter),

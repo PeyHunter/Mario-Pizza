@@ -33,6 +33,7 @@ public class Main {
 
             if (input.equalsIgnoreCase("exit")) {
                 break; // Exit the loop if user types 'exit'
+
             } else if (input.equalsIgnoreCase("remove")) {
                 System.out.println("Enter the order number to remove:");
                 int ordreToRemove;
