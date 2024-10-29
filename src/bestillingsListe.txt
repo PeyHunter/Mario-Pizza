@@ -1,24 +1,30 @@
 ORDRE:
  - Ordre Number: 1
- - Bestillings Tid: 10.46
+ - Bestillings Tid: 11.51
+ - Bestillings Dato: 29-10-24
+ - Pizza: Pepperoni, Price: 70, Nr: 2
+
+ORDRE:
+ - Ordre Number: 2
+ - Bestillings Tid: 11.51
  - Bestillings Dato: 29-10-24
  - Pizza: Margherita, Price: 60, Nr: 1
 
 ORDRE:
- - Ordre Number: 2
- - Bestillings Tid: 10.47
- - Bestillings Dato: 29-10-24
- - Pizza: Spicy Sausage, Price: 80, Nr: 13
-
-ORDRE:
  - Ordre Number: 3
- - Bestillings Tid: 10.47
+ - Bestillings Tid: 11.51
  - Bestillings Dato: 29-10-24
- - Pizza: Mushroom and Truffle Oil, Price: 120, Nr: 15
+ - Pizza: Pepperoni, Price: 70, Nr: 2
 
 ORDRE:
  - Ordre Number: 4
- - Bestillings Tid: 10.47
+ - Bestillings Tid: 12.14
  - Bestillings Dato: 29-10-24
- - Pizza: Zucchini and Goat Cheese, Price: 85, Nr: 23
+ - Pizza: Pepperoni, Price: 70, Nr: 2
+
+ORDRE:
+ - Ordre Number: 5
+ - Bestillings Tid: 12.14
+ - Bestillings Dato: 29-10-24
+ - Pizza: Hawaiian, Price: 75, Nr: 3
 

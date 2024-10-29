@@ -63,11 +63,11 @@ public class Menukort {
                 int pizzaPrice = p.getPizzaPrice();
                 int pizzaNr = p.getPizzaNumber();
 
-                writer.append(pizzaName + ", ");
-                writer.append(Integer.toString(pizzaPrice) + ", ");
+                writer.append("Pizza: " + pizzaName + ", Price: ");
+                writer.append(Integer.toString(pizzaPrice) + ", Pizza Number: ");
                 writer.append(Integer.toString(pizzaNr) + '\n');
 
-                System.out.println(p.getPizzaName() + ", " + p.getPizzaPrice() + ", " + p.getPizzaNumber());
+               // System.out.println(p.getPizzaName() + ", " + p.getPizzaPrice() + ", " + p.getPizzaNumber());
             }
 
         } catch (IOException e) {
