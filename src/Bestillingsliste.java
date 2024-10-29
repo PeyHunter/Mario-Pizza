@@ -104,6 +104,7 @@
 
             DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH.mm");
             DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd-MM-yy");
+            int totalPrice = 0;
 
             try (FileWriter writer = new FileWriter(ordrerHistorik, false)) {
                 if (ordrerHistorik.length() == 0) {
@@ -112,6 +113,8 @@
                 for (int i = 0; i < this.ordreHistorikArray.size(); i++) {
                     Ordre o = this.ordreHistorikArray.get(i);
                     Pizza pizza = o.getPizzaObject(); // Get
+
+
 
                     //Udskriver tekst:
 
@@ -130,7 +133,12 @@
 
                     writer.append(System.lineSeparator());
 
+                    totalPrice += pizza.getPizzaPrice();
                 }
+
+                writer.append("TOTAL INCOME FOR TODAY:\n");
+                writer.append(String.format("%d DKK\n", totalPrice));
+
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -139,9 +147,10 @@
 
         public void addRemovedOrdersToFile()
         {
-
             for(int i = 0; i < ordreHistorikArray.size(); i++)
             {
+
+
                 Ordre ordre = ordreHistorikArray.get(i);
                 System.out.println(ordre);
             }

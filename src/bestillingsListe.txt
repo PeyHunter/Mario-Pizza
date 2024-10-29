@@ -1,2 +1,8 @@
 ACTIVE ORDERS / BESTILLINGSLISTE 
 
+ORDRE:
+ - Ordre Number: 4
+ - Bestillings Tid: 15.52
+ - Bestillings Dato: 29-10-24
+ - Pizza: Tandoori Chicken, Price: 110, Nr: 26
+

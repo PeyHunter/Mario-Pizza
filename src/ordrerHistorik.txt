@@ -1,20 +1,28 @@
 FINISHED / PAID FOR ORDERS  
 
 ORDRE:
- - Ordre Number: 3
- - Bestillings Tid: 15.30
+ - Ordre Number: 1
+ - Bestillings Tid: 15.52
  - Bestillings Dato: 29-10-24
  - Pizza: Spicy Sausage, Price: 80, Nr: 13
 
 ORDRE:
  - Ordre Number: 2
- - Bestillings Tid: 15.30
+ - Bestillings Tid: 15.52
  - Bestillings Dato: 29-10-24
- - Pizza: Seafood Special, Price: 110, Nr: 11
+ - Pizza: Prosciutto and Rocket, Price: 90, Nr: 14
 
 ORDRE:
- - Ordre Number: 1
- - Bestillings Tid: 15.30
+ - Ordre Number: 3
+ - Bestillings Tid: 15.52
  - Bestillings Dato: 29-10-24
- - Pizza: Tuna and Sweetcorn, Price: 95, Nr: 12
+ - Pizza: Egg and Bacon, Price: 100, Nr: 24
 
+ORDRE:
+ - Ordre Number: 5
+ - Bestillings Tid: 15.52
+ - Bestillings Dato: 29-10-24
+ - Pizza: Hawaiian, Price: 75, Nr: 3
+
+TOTAL INCOME FOR TODAY:
+345 DKK
