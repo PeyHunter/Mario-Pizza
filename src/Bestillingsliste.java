@@ -115,7 +115,6 @@
                     Pizza pizza = o.getPizzaObject(); // Get
 
 
-
                     //Udskriver tekst:
 
                     writer.append(String.format("ORDRE:\n" +
@@ -149,21 +148,9 @@
         {
             for(int i = 0; i < ordreHistorikArray.size(); i++)
             {
-
-
                 Ordre ordre = ordreHistorikArray.get(i);
                 System.out.println(ordre);
             }
-
         }
-
     }
-
-
-
-
-    //        public void removePaidOrders ()
-    //        {
-    //            ordreList.removeIf(Ordre::isPaid);
-    //        }
 

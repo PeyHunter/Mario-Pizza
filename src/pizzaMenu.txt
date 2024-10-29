@@ -898,3 +898,33 @@ Pizza: Pastrami Pizza, Price: 95, Pizza Number: 27
 Pizza: Bolognese Pizza, Price: 85, Pizza Number: 28
 Pizza: Quattro Stagioni, Price: 105, Pizza Number: 29
 Pizza: Lamb and Mint, Price: 115, Pizza Number: 30
+Pizza: Margherita, Price: 60, Pizza Number: 1
+Pizza: Pepperoni, Price: 70, Pizza Number: 2
+Pizza: Hawaiian, Price: 75, Pizza Number: 3
+Pizza: BBQ Chicken, Price: 85, Pizza Number: 4
+Pizza: Vegetarian, Price: 65, Pizza Number: 5
+Pizza: Meat Lovers, Price: 90, Pizza Number: 6
+Pizza: Four Cheese, Price: 80, Pizza Number: 7
+Pizza: Buffalo Chicken, Price: 95, Pizza Number: 8
+Pizza: Supreme, Price: 100, Pizza Number: 9
+Pizza: Mexican, Price: 85, Pizza Number: 10
+Pizza: Seafood Special, Price: 110, Pizza Number: 11
+Pizza: Tuna and Sweetcorn, Price: 95, Pizza Number: 12
+Pizza: Spicy Sausage, Price: 80, Pizza Number: 13
+Pizza: Prosciutto and Rocket, Price: 90, Pizza Number: 14
+Pizza: Mushroom and Truffle Oil, Price: 120, Pizza Number: 15
+Pizza: Calzone, Price: 85, Pizza Number: 16
+Pizza: Carbonara Pizza, Price: 90, Pizza Number: 17
+Pizza: Pesto and Chicken, Price: 95, Pizza Number: 18
+Pizza: Gorgonzola and Pear, Price: 110, Pizza Number: 19
+Pizza: Salami and Olive, Price: 80, Pizza Number: 20
+Pizza: Spinach and Ricotta, Price: 70, Pizza Number: 21
+Pizza: Greek Pizza (Feta and Olives), Price: 75, Pizza Number: 22
+Pizza: Zucchini and Goat Cheese, Price: 85, Pizza Number: 23
+Pizza: Egg and Bacon, Price: 100, Pizza Number: 24
+Pizza: Shrimp and Pesto, Price: 90, Pizza Number: 25
+Pizza: Tandoori Chicken, Price: 110, Pizza Number: 26
+Pizza: Pastrami Pizza, Price: 95, Pizza Number: 27
+Pizza: Bolognese Pizza, Price: 85, Pizza Number: 28
+Pizza: Quattro Stagioni, Price: 105, Pizza Number: 29
+Pizza: Lamb and Mint, Price: 115, Pizza Number: 30
