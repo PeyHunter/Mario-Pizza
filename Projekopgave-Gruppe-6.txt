@@ -1,0 +1,22 @@
+Link til GitHub repository:
+https://github.com/SumayaIAden1/MarioPizza
+
+Projekt Rapport (Systemudvikling) 
+Risiko Analyse (IT & Forretningsforståelse)
+
+Gruppedeltagernes fuldenavn:
+Isabella Bech Meklenborg Joensen
+Sumaya Aden Ahmed
+Peyton Hunter 
+Nauar Al- zubaidi 
+
+
+GitHub deltagernavne:
+Isabella - Isabellabmj
+Sumaya - SumayaIAden1
+Peyton - PeyHunter
+Nauar - Nauar123
+
+
+Link til HTML MockUp:
+https://github.com/PeyHunter/Mario-s-Pizzabar-Mockup 
