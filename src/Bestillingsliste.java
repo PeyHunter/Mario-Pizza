@@ -138,7 +138,6 @@ public class Bestillingsliste {
             writer.append("TOTAL INCOME FOR TODAY:\n");
             writer.append(String.format("%d DKK\n \n", totalPrice));
 
-
             writer.append(findPizzaDuplicates());
 
 
@@ -209,8 +208,4 @@ public class Bestillingsliste {
         return duplicatesInfo.toString();
 
     }
-
-
-
-
 }

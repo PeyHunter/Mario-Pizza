@@ -13,10 +13,7 @@ public class Ordre {
     private LocalDateTime bestillingsTid;
     private LocalDate bestillingsDato;
     private Pizza pizzaObject;
-    private int antal;
     private boolean paid;
-
-    private Random random = new Random();
 
 
 
@@ -29,18 +26,6 @@ public class Ordre {
         this.paid = false;
     }
 
-   /* public void markAsPaid() {
-        this.paid = true;
-    }
-
-    public boolean isPaid() {
-        return this.paid;
-    }
-
-    public int getAntal()
-    {
-        return this.antal;
-    }*/
 
     public int getOrdreNr(){
         return ordreNr;

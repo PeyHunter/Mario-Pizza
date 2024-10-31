@@ -65,8 +65,6 @@ public class Menukort {
                 writer.append(Integer.toString(pizzaNr) + '\n');
 
 
-
-
                 // System.out.println(p.getPizzaName() + ", " + p.getPizzaPrice() + ", " + p.getPizzaNumber());
             }
             writer.flush();

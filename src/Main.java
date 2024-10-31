@@ -84,10 +84,7 @@ public class Main {
 
             bestillingsliste.addRemovedOrdersToFile();
             bestillingsliste.findPizzaDuplicates();
-            menukortInstans.writePizzaMenuToFile();
-
 
         }
-
     }
 }
