@@ -21,6 +21,10 @@ public class Main {
         menukortInstans.createMenuKort();
         menukortInstans.writePizzaMenuToFile();
 
+        for (Pizza p : menukortInstans.getPizzaMenuList()) {
+            System.out.println("Pizza: " + p.getPizzaName() + ", Price: " + p.getPizzaPrice() + ", Number: " + p.getPizzaNumber());
+        }
+
 
         //BESTILLINGSLISTE:
 
@@ -79,6 +83,8 @@ public class Main {
             }
 
             bestillingsliste.addRemovedOrdersToFile();
+            bestillingsliste.findPizzaDuplicates();
+            menukortInstans.writePizzaMenuToFile();
 
 
         }

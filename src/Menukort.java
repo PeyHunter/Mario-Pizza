@@ -6,10 +6,7 @@ import java.util.Random;
 
 public class Menukort {
 
-    public Menukort()
-    {
-    }
-
+    public Menukort() {}
 
     public ArrayList<Pizza> pizzaMenuList = new ArrayList<>();
 
@@ -55,7 +52,7 @@ public class Menukort {
     public void writePizzaMenuToFile()
     {
         File pizzaFile = new File("/Users/peytonhunter/Library/CloudStorage/OneDrive-Personal/Documents/Datamatiker/1 Semester/Programmering/InteliJ/Mario Pizza/src/pizzaMenu.txt" );
-        try (FileWriter writer = new FileWriter(pizzaFile, true)) {
+        try (FileWriter writer = new FileWriter(pizzaFile, false)) {
             for (int i = 0; i < pizzaMenuList.size(); i++) {
                 Pizza p = pizzaMenuList.get(i);
 
@@ -67,8 +64,13 @@ public class Menukort {
                 writer.append(Integer.toString(pizzaPrice) + ", Pizza Number: ");
                 writer.append(Integer.toString(pizzaNr) + '\n');
 
+
+
+
                 // System.out.println(p.getPizzaName() + ", " + p.getPizzaPrice() + ", " + p.getPizzaNumber());
             }
+            writer.flush();
+            System.out.println("Pizza menu written successfully.");
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -79,13 +81,5 @@ public class Menukort {
         return pizzaMenuList;
     }
 
-    private Pizza randomPizza() {
-        Random random = new Random();
-        int randomIndex = random.nextInt(pizzaMenuList.size());
-        return pizzaMenuList.get(randomIndex);
-    }
 
-    public Pizza getRandomPizza() {
-        return randomPizza();
-    }
 }

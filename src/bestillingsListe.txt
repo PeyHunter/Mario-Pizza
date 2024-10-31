@@ -1,20 +1,20 @@
 ACTIVE ORDERS / BESTILLINGSLISTE 
 
 ORDRE:
- - Ordre Number: 5
- - Bestillings Tid: 09.22
+ - Ordre Number: 2
+ - Bestillings Tid: 10.21
  - Bestillings Dato: 31-10-24
  - Pizza: Tuna and Sweetcorn, Price: 95, Nr: 12
 
 ORDRE:
- - Ordre Number: 6
- - Bestillings Tid: 09.22
+ - Ordre Number: 4
+ - Bestillings Tid: 10.21
  - Bestillings Dato: 31-10-24
- - Pizza: Zucchini and Goat Cheese, Price: 85, Nr: 23
+ - Pizza: Shrimp and Pesto, Price: 90, Nr: 25
 
 ORDRE:
- - Ordre Number: 7
- - Bestillings Tid: 09.22
+ - Ordre Number: 9
+ - Bestillings Tid: 10.21
  - Bestillings Dato: 31-10-24
- - Pizza: BBQ Chicken, Price: 85, Nr: 4
+ - Pizza: Spicy Sausage, Price: 80, Nr: 13
 

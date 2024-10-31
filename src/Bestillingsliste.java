@@ -136,7 +136,10 @@ public class Bestillingsliste {
             }
 
             writer.append("TOTAL INCOME FOR TODAY:\n");
-            writer.append(String.format("%d DKK\n", totalPrice));
+            writer.append(String.format("%d DKK\n \n", totalPrice));
+
+
+            writer.append(findPizzaDuplicates());
 
 
         } catch (IOException e) {
@@ -152,4 +155,62 @@ public class Bestillingsliste {
             System.out.println(ordre);
         }
     }
+
+    // FIND POPULÆR PIZZA:
+
+    public String findPizzaDuplicates()
+    {
+        StringBuilder duplicatesInfo = new StringBuilder();
+        boolean duplicateFound = false;
+        String mostPopularPiza = null;
+        int maxCount = 0;
+
+        // TÆL PIZZA
+        for (int i = 0; i < ordreHistorikArray.size(); i++ )
+        {
+            Ordre ordre1 = ordreHistorikArray.get(i);
+            Pizza pizza1 = ordre1.getPizzaObject();
+            String pizzaName = pizza1.getPizzaName();
+
+            int count = 1;
+
+            // hvor mange pizza er i array'et
+
+            for (int j = 0; j < ordreHistorikArray.size(); j++)
+            {
+                Ordre ordre2 = ordreHistorikArray.get(j);
+                Pizza pizza2 = ordre2.getPizzaObject();
+
+                if (pizza1.getPizzaName().equals(pizza2.getPizzaName()) &&
+                pizza1.getPizzaPrice() == pizza2.getPizzaPrice())
+                {
+                    count++;
+                }
+            }
+
+            //UPDATE POPULOR PIZZA
+
+            if (count > maxCount) {
+                maxCount = count;
+                mostPopularPiza = pizzaName;
+                duplicateFound = true;
+            }
+        }
+
+        //RESULT
+
+        if ( duplicateFound )
+        {
+            duplicatesInfo.append("Most popular pizza: ").append(mostPopularPiza).append("\n");
+        } else {
+            duplicatesInfo.append("No duplicate pizzas found.\n");
+        }
+
+        return duplicatesInfo.toString();
+
+    }
+
+
+
+
 }
