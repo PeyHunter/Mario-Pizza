@@ -1,16 +1,28 @@
 FINISHED / PAID FOR ORDERS  
 
 ORDRE:
- - Ordre Number: 1
- - Bestillings Tid: 09.12
+ - Ordre Number: 2
+ - Bestillings Tid: 09.21
  - Bestillings Dato: 31-10-24
- - Pizza: Margherita, Price: 60, Nr: 1
+ - Pizza: Tuna and Sweetcorn, Price: 95, Nr: 12
 
 ORDRE:
  - Ordre Number: 3
- - Bestillings Tid: 09.12
+ - Bestillings Tid: 09.21
  - Bestillings Dato: 31-10-24
- - Pizza: Hawaiian, Price: 75, Nr: 3
+ - Pizza: Zucchini and Goat Cheese, Price: 85, Nr: 23
+
+ORDRE:
+ - Ordre Number: 4
+ - Bestillings Tid: 09.21
+ - Bestillings Dato: 31-10-24
+ - Pizza: Lamb and Mint, Price: 115, Nr: 30
+
+ORDRE:
+ - Ordre Number: 1
+ - Bestillings Tid: 09.21
+ - Bestillings Dato: 31-10-24
+ - Pizza: Margherita, Price: 60, Nr: 1
 
 TOTAL INCOME FOR TODAY:
-135 DKK
+355 DKK
