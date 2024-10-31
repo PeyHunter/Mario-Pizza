@@ -1,8 +1,20 @@
 ACTIVE ORDERS / BESTILLINGSLISTE 
 
 ORDRE:
+ - Ordre Number: 2
+ - Bestillings Tid: 09.12
+ - Bestillings Dato: 31-10-24
+ - Pizza: Tuna and Sweetcorn, Price: 95, Nr: 12
+
+ORDRE:
  - Ordre Number: 4
- - Bestillings Tid: 15.52
- - Bestillings Dato: 29-10-24
- - Pizza: Tandoori Chicken, Price: 110, Nr: 26
+ - Bestillings Tid: 09.12
+ - Bestillings Dato: 31-10-24
+ - Pizza: Zucchini and Goat Cheese, Price: 85, Nr: 23
+
+ORDRE:
+ - Ordre Number: 5
+ - Bestillings Tid: 09.12
+ - Bestillings Dato: 31-10-24
+ - Pizza: Pepperoni, Price: 70, Nr: 2
 

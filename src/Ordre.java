@@ -72,9 +72,3 @@ public class Ordre {
 
     }
 }
-
-
-
-
-//private static String [] fornavn = {"Peyton","Sumaya", "Line", "Isabella", "Nauer", "Ole", "Henrik","Adam", "Ib", "Bo", };
-//private static String [] efternavn = {"Jones","Albrektsen", "Steffensen", "Hendel", "Andersen", "Badreldin","Vestergaard", "Hunter", "Green", "Simonsen"};

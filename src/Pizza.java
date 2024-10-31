@@ -7,24 +7,24 @@ public class Pizza {
     private int pizzaNumber;
 
 
-   public Pizza(String pName, int pPrice, int pNumber) {
-    pizzaName = pName;
-    pizzaPrice = pPrice;
-    pizzaNumber = pNumber;
-   }
+    public Pizza(String pName, int pPrice, int pNumber) {
+        pizzaName = pName;
+        pizzaPrice = pPrice;
+        pizzaNumber = pNumber;
+    }
 
 
-   public String getPizzaName() {
+    public String getPizzaName() {
         return pizzaName;
-   }
+    }
 
-   public int getPizzaPrice() {
+    public int getPizzaPrice() {
         return pizzaPrice;
-   }
+    }
 
-   public int getPizzaNumber() {
+    public int getPizzaNumber() {
         return pizzaNumber;
-   }
+    }
 
     @Override
     public String toString() {
